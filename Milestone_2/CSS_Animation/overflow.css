@@ -1,0 +1,14 @@
+.box{
+    width: 250px;
+    height: 200px;
+    border: 1px solid tomato;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow: auto;
+
+}
+/* over flow auto means when need to scroll it will be do automatically */
+  /*   overflow-y: hidden;
+    overflow-y: auto;/* 
+  
+  

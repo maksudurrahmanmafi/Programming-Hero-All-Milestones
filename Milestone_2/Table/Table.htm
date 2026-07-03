@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Design</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 15px 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: larger;
+            background-color: antiquewhite;
+        }
+    </style>
+  </head>
+  <body>
+    <table>
+        <section>
+      <caption>
+        This is a table
+      </caption>
+      <thead>
+        <tr>
+          <th>CSS Support</th>
+          <th>Chrome</th>
+          <th>Brave</th>
+          <th>Linux</th>
+          <th>Firefox</th>
+          <th>Avast</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td rowspan="3">Border Radius</td>
+            <td colspan="2">Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+        </tr>
+        <tr>
+            <td>Box Shadow</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>N</td>
+            <td>Y</td>
+        </tr>
+        <tr>
+            <td>CSS Animatio</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>N</td>
+            <td>Y</td>
+        </tr>
+      </tbody>
+      <tfoot style="text-align: right;"><td colspan="6" rowspan="">Total Uses Browser : 5</td></tfoot>
+    </table>
+    </section>
+  </body>
+</html>

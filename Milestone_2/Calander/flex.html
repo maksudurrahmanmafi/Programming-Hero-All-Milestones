@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-box{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            border: 1px solid tomato;
+            height: 100vh;
+            align-items: center;
+             flex-direction:row-reverse;
+            
+           
+        }
+        .box{
+            display: flex;
+            border: 2px solid rgb(17, 144, 255);
+            width: 300px;
+            height: 200px;
+           
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container-box">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <section>
+        
+        <div class="container">
+            
+            <div class="img-grid">
+                <img class="first-img" src="bird.png" alt="bird">
+                <img src="bird.png" alt="bird">
+            </div>
+            <div class="img-grid-2">
+                <img  src="bird.png" alt="bird">
+                <img src="bird.png" alt="bird">
+                <img src="bird.png" alt="bird">
+            </div>
+             <div class="img-grid-3">
+                <img  src="bird.png" alt="bird">
+                <img class="img-3" src="bird.png" alt="bird">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+ -->
+
+<!--  .container {
+    width: 100%;
+}
+
+.img-grid,.img-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+  
+    margin-bottom: 20px; 
+}
+
+.img-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin-bottom: 20px; 
+}
+.img-grid img, 
+.img-grid-2 img,
+.img-grid-3 img {
+    width: 100%; 
+    height: 300px;
+    object-fit: cover;
+}
+
+.first-img ,.img-3{
+    grid-column: span 2; 
+   
+    height: 300px; 
+} -->

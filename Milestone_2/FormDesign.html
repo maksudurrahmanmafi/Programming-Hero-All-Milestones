@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title> <!-- বানান ঠিক করা হয়েছে -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 id="heading"><em>Your Profile</em></h1>
+    <p id="subtitle">Enter your login information for your account</p>
+    
+    <form action="">
+        <!-- First Name (এটি আগে থেকেই ঠিক ছিল) -->
+        <label for="fname">First Name <span style="color: red">*</span></label><br />
+        <input type="text" id="fname" placeholder="Enter your first name " required />
+        <br><br>
+
+        <!-- Last Name (id="lname" যোগ করা হয়েছে) -->
+        <label for="lname">Last Name <span style="color: red">*</span></label><br />
+        <input type="text" id="lname" placeholder="Enter your last name " required />
+        <br><br>
+
+        <!-- Email (id="email" যোগ করা হয়েছে) -->
+        <label for="email">Email <span style="color: red;">*</span></label> <br>
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <br><br>
+
+        <!-- Submit Button (type="submit" যোগ করা হয়েছে) -->
+        <button type="submit" class="button">Submit</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+/* .raleway-normal {
+  font-optical-sizing: auto;
+  font-style: normal;
+} */
+
+/* CSS access in a variable */
+:root {
+  --primary-color: #fff;
+  --secondery-color: #000;
+  --heading-font: "Raleway", sans-serif;
+  --paragraph-font: "Raleway", sans-serif;
+}
+h1,
+h2,
+h4,
+h3,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+/* body {
+} */
+
+h1 {
+  font-size: 64px;
+}
+/* h2{
+    font-size: 45px;
+} */
+h3 {
+  font-size: 42px;
+}
+
+/* Shared Button */
+.primary-color {
+  color: #4e47ff;
+}
+.button-global {
+  background-color: #4e47ff;
+  color: white;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-global:hover {
+  background-color: #30e3ff;
+}
+
+/* Nav */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 130px;
+  padding: 20px 0;
+}
+
+nav h2 {
+  color: #4e47ff;
+  font-weight: bold;
+  font-size: 34px;
+  margin: 0;
+}
+
+nav button {
+  width: 132px;
+  height: 48px;
+}
+
+/* header bg */
+
+.header-bg {
+  background-image: url("../Assignment_1/images/Assets/Hero-bg.png");
+  height: 100vh;
+}
+/* Hero Section */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 90px);
+  text-align: center;
+}
+
+.hero-title {
+  font-weight: 700;
+  color: #252432;
+  margin-bottom: 30px;
+  max-width: 900px;
+}
+/* main */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* See Action */
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 130px;
+  margin-bottom: 130px;
+
+  gap: 50px;
+}
+.action h3 {
+  font-weight: bold;
+  margin: 0;
+}
+.action p {
+  font-weight: normal;
+  line-height: 30px;
+}
+.action img {
+  border-radius: 48px;
+}
+
+/* How Works */
+
+.how-works {
+  background-color: rgba(78, 71, 255, 0.1);
+  padding: 50px;
+  border-radius: 20px;
+  margin: 80px auto;
+}
+
+.how-works h3 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.how-works ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+.how-works ul li {
+  text-align: center;
+}
+
+.how-works ul li h2 {
+  font-size: 60px;
+  color: #4e47ff;
+  margin: 0;
+}
+
+.how-works ul li p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* user says */
+.user {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.user-says {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  margin-bottom: 130px;
+}
+
+.user-says:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.reviewer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewer h6,
+.reviewer p {
+  margin: 0;
+}
+
+/* Focus Section */
+
+.focus {
+  background-color: #eeeded;
+
+  border-radius: 12px;
+  padding: 60px 30px;
+}
+
+.focus-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.focus-section h1 {
+  margin-bottom: 15px;
+}
+
+.focus-section p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.focus-section img {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+
+/* contact section */
+
+.contact-section {
+  background-color: #fdfdfd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  padding: 80px 0;
+}
+
+.contact-section h1 {
+  flex: 1;
+
+  font-weight: bold;
+}
+
+.contact-section form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-section textarea {
+  resize: none;
+}
+
+.contact-section input[type="submit"] {
+  width: 100%;
+}
+
+/* Footer */
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.footer-section h1 {
+  color: #4e47ff;
+  margin: 0;
+}
+
+.footer-section p {
+  color: #555;
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.footer-section ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s;
+}
+
+.footer-section a:hover {
+  color: #4e47ff;
+}
