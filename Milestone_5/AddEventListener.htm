@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Listener</title>
+</head>
+<body>
+    <button id="mouse-hover">
+        Mouse hover
+    </button>
+
+    <script>
+        document.getElementById('mouse-hover').addEventListener('mouseenter',
+           () =>{
+                document.getElementById('mouse-hover').style.backgroundColor='yellow'
+            }
+        )
+    </script>
+</body>
+</html>
