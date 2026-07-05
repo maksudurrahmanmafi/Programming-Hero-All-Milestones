@@ -1,0 +1,149 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment</title>
+    <style>
+      .comment {
+        background-color: aqua;
+        margin: 15px;
+        padding: 20px;
+        font-size: larger;
+        border: 1px solid red;
+        border-radius: 10px;
+        height: 65px;
+        width: 100%;
+      }
+      .textarea-2 {
+        margin: 15px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="comment-container">
+      <p class="comment">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, eum!
+      </p>
+      <p class="comment">
+        Voluptatem possimus tempora quis neque odit vitae, quo molestiae
+        veritatis!
+      </p>
+      <p class="comment">
+        Aperiam expedita nemo ipsum. Iusto voluptate quasi minima vitae sint.
+      </p>
+      <textarea
+        id="textarea"
+        class="textarea-2"
+        cols="100"
+        rows="10"
+      ></textarea>
+      <button id="post">Post</button>
+
+      <script>
+        document.getElementById("post").addEventListener("click", () => {
+          const inputValue = document.getElementById("textarea").value;
+          const container = document.getElementById('comment-container')
+
+          const commentNew = document.createElement('p')
+          commentNew.innerText = inputValue
+        container.appendChild(commentNew)
+
+        });
+      </script>
+    </div>
+  </body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Section</title>
+
+    <style>
+        .comment {
+            background-color: aqua;
+            margin: 15px;
+            padding: 20px;
+            font-size: larger;
+            border: 1px solid red;
+            border-radius: 10px;
+        }
+
+        .textarea-2 {
+            margin: 15px;
+            padding: 10px;
+        }
+
+        button {
+            margin-left: 15px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="comment-container">
+        <p class="comment">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, eum!
+        </p>
+
+        <p class="comment">
+            Voluptatem possimus tempora quis neque odit vitae.
+        </p>
+
+        <p class="comment">
+            Aperiam expedita nemo ipsum. Iusto voluptate quasi minima vitae sint.
+        </p>
+    </div>
+
+    <textarea
+        id="textarea"
+        class="textarea-2"
+        cols="100"
+        rows="8"
+        placeholder="Write your comment..."
+    ></textarea>
+
+    <br>
+
+    <button id="post">Post</button>
+
+    <script>
+        document.getElementById("post").addEventListener("click", () => {
+
+            const textarea = document.getElementById("textarea");
+            const inputValue = textarea.value;
+
+            // Empty comment check
+            if (inputValue.trim() === "") {
+                alert("Please write a comment!");
+                return;
+            }
+
+            const container = document.getElementById("comment-container");
+
+            // Create new paragraph
+            const commentNew = document.createElement("p");
+
+            commentNew.innerText = inputValue;
+
+            // Add CSS class
+            commentNew.classList.add("comment");
+
+            // Add to container
+            container.appendChild(commentNew);
+
+            // Clear textarea
+            textarea.value = "";
+        });
+    </script>
+
+</body>
+</html>
