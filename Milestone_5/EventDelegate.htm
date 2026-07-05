@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation Practice</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:40px;
+        }
+
+        li{
+            margin:10px 0;
+            cursor:pointer;
+        }
+
+        button{
+            margin-top:15px;
+            padding:8px 15px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Task List</h2>
+
+<ul id="task-list">
+    <li>Learn HTML</li>
+    <li>Learn CSS</li>
+    <li>Learn JavaScript</li>
+</ul>
+
+<button id="add-btn">Add Task</button>
+
+<script>
+
+const taskList = document.getElementById("task-list");
+const addBtn = document.getElementById("add-btn");
+
+let count = 1;
+
+// Add New Task
+addBtn.addEventListener("click", function(){
+
+    const li = document.createElement("li");
+    li.innerText = "New Task " + (taskList.children.length + 1);
+
+    taskList.appendChild(li);
+
+});
+
+// Event Delegation (Remove Task)
+taskList.addEventListener("click", function(event){
+
+    event.target.remove();
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubble</title>
+</head>
+<body>
+    <ol id="order-list">
+        <li id="item-1">1</li>
+        <li id="item-2">2</li>
+        <li id="item-3">3</li>
+        <li id="item-4">4</li>
+    </ol>
+
+    <script>
+        document.getElementById('item-1').addEventListener('click', (event) => {
+                event.target.remove()
+                //use for don't go to up
+                event.stopPropagation()
+
+                //use for stop on current 
+                event.stopImmediatePropagation() 
+        })
+        document.getElementById('order-list').addEventListener('click', () => {
+                console.log("order clicked")
+        })
+    </script>
+</body>
+</html>
