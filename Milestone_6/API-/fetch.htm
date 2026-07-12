@@ -1,13 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fetch API</title>
-</head>
-<body>
-    <Button onclick="fetchApi()">Fetch API</Button>
-    <Button onclick="arrayOfObj()"> API</Button>
+
+    <style>
+      body {
+        background-color: aqua;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      li {
+        background-color: antiquewhite;
+        border-radius: 10px;
+        height: 100px;
+        padding-left: 20px;
+
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <Button onclick="fetchApi()">Fetch API</Button> -->
+    <button onclick="arrayOfObj()">API</button>
+
+    <ul id="ul-items">
+      
+    </ul>
     <script src="fetch.js"></script>
-</body>
+  </body>
 </html>
