@@ -60,8 +60,20 @@ const vocaBulary = (id)=>{
 const loadVocabulary = (words)=>{
     const vocabularyContainer = document.getElementById('loadvocabulary')
     vocabularyContainer.innerHTML=''
+
+     if(words.data.length ===0){
+            vocabularyContainer.innerHTML =`
+            <div class="text-center col-span-full p-4">
+            <img src="./assets/alert-error.png" class="mx-auto mb-4" alt="No Data">
+        <p class="text-xl text-gray-400 font-bangla my-4">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+        <h2 class="text-4xl font-bold">নেক্সট Lesson এ যান</h2>
+        </div>`
+            return
+        }
+
     words.data.forEach(word =>{
         const vocaContainer = document.createElement('div')
+       
         vocaContainer.innerHTML =`
          <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 text-center p-8 space-y-5">
 
