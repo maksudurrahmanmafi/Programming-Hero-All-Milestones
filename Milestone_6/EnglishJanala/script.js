@@ -40,7 +40,7 @@ const eachLevel = (results) => {
         const createDiv = document.createElement("div");
 
         createDiv.innerHTML = `
-            <button onClick ="vocaBulary(${result.level_no})" class="btn btn-outline btn-primary mx-4">
+            <button id="lesson-btn-${result.level_no} onClick ="vocaBulary(${result.level_no})" class="btn btn-outline btn-primary mx-4">
             <i class="fa-solid fa-book-open"></i>
                 Level-${result.level_no}
             </button>
@@ -122,3 +122,7 @@ const loadVocabulary = (words)=>{
 }
 
 allLevel();
+
+/* const api = 'https://openapi.programming-hero.com/api/levels/all'
+const load = fetch(api).then(res => res.json()).then(data => console.log(data))
+ */
