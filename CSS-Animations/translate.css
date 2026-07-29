@@ -1,0 +1,96 @@
+.parent-container>div{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent-container{
+    display: grid;
+   
+    gap: 20px;
+    
+
+
+}
+ .box-1:hover{
+    transition: transform .6s ease;
+    
+     transform: translateX(200px)
+
+ }
+.box-2:hover{
+    transform: translateX(200px);
+    transition: transform 1s ease-in;
+
+}
+.box-4:hover{
+    transform: translateX(200px);
+    transition: transform .6s ease-out;
+
+}
+.box-5:hover{
+    transform: translateX(200px);
+    transition: transform .6s ease-in-out;
+
+}
+.box-3:hover{
+    transform: translateX(200px);
+    transition: transform .6s linear 1s;
+
+}
+
+/* .box-1:hover{
+    transform: skewX(20deg);
+}
+.box-2:hover{
+    transform: skewY(20deg);
+}
+.box-3:hover{
+    transform: skew(20deg,10deg);
+}
+ */
+/*  .box-1:hover{
+    transform-origin: right;
+     transform: rotate(45deg);
+ }
+.box-2:hover{
+    transform: rotate(45deg) scale(1.5);
+}
+.box-3:hover{
+    transform: translateY(-10px) rotate(45deg) scale(1.5);
+} */
+
+/* .box-1:hover{
+    transform: rotate(45deg);
+}
+.box-2:hover{
+    transform: rotate(90deg);
+}
+.box-3:hover{
+    transform: rotate(180deg);
+}
+.box-4:hover{
+    transform: rotate(360deg);
+} */
+
+
+/* .box-1:hover{
+    transform: translateX(100px);
+}
+.box-2:hover{
+    transform: translateX(-100px);
+}
+.box-3:hover{
+    transform: translateY(-100px);
+}
+.box-4:hover{
+    transform: translateY(100px);
+}
+.box-5:hover{
+    transform: translateX(100px) translateY(-50px);
+}
+.box-6:hover{
+    transform: translateX(-100px) translateY(50px);
+} */
