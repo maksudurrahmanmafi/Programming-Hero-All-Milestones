@@ -1,4 +1,96 @@
-.box{
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#111;
+}
+
+.solar-system{
+    position:relative;
+    width:400px;
+    height:400px;
+}
+
+/* Sun */
+
+.sun{
+    width:80px;
+    height:80px;
+    background:gold;
+    border-radius:50%;
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+}
+
+/* Orbit */
+
+.orbit{
+
+    width:250px;
+    height:250px;
+
+    border:2px dashed gray;
+    border-radius:50%;
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    animation-name:rotateOrbit;
+    animation-duration:6s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+/* Planet */
+
+.planet{
+
+    width:30px;
+    height:30px;
+
+    background:deepskyblue;
+    border-radius:50%;
+
+    position:absolute;
+
+    top:50%;
+    right:-15px;
+
+    transform:translateY(-50%);
+}
+
+/* Animation */
+
+@keyframes rotateOrbit{
+
+    from{
+        transform:translate(-50%,-50%) rotate(0deg);
+    }
+
+    to{
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+
+}
+
+
+/* .box{
     height: 100px;
     width: 100px;
     background-color: bisque;
@@ -45,7 +137,7 @@
     to{
         transform: translateX(300px);
     } */
-     0%{
+     /* 0%{
 
         background-color: red;
         transform: translateX(0px);
@@ -57,9 +149,9 @@
      }
      50%{
         background-color: green;
-        transform: translate(100px,100px);
+        transform: translate(100px,100px); */
 
-     }
+     /* }
      75%{
         background-color: orange;
         transform: translate(0px,100px);
@@ -73,5 +165,5 @@
 
         /* transform: translateX(-100px); */
 
-     }
-}
+     /* } */
+/* } */
